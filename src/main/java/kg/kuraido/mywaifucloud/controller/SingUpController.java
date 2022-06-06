@@ -13,18 +13,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 public class SingUpController {
-    @GetMapping("user/signup")
+    @GetMapping("/user/signup")
     public String showSignUpForm(WebRequest request, Model model){
         UserDto userDto = new UserDto();
         model.addAttribute("user", userDto);
         return "signup";
     }
 
-    @PostMapping("user/signup")
-    public ModelAndView registerUserAccount(@ModelAttribute("user") @Valid UserDto userDto,
-                                            HttpServletRequest request, Errors errors) {
-        try{
-            User 
-        }
-    }
+//    @PostMapping("user/signup")
+//    public ModelAndView registerUserAccount(@ModelAttribute("user") @Valid UserDto userDto,
+//                                            HttpServletRequest request, Errors errors) {
+////        try{
+////        }
+//
+//    }
 }
